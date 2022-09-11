@@ -5,7 +5,26 @@
         "ProjectId": "0bec5428-b7e4-43d5-82b3-2642a60656c0",
         "ProjectName": "bravo-one",
         "DBTypeName": "SQL Server",
-        "Environments": null,
+        "Environments": [
+          {
+            "EnvironmentId": "d7b58f8f-5846-493b-90b7-7c83115c5ad7",
+            "EnvironmentName": "Dev_Env_1",
+            "EnvironmentType": "DEV",
+            "Databases": [
+              {
+                "DatabaseId": "60ed9ca7-328e-4e65-bbe8-3d145b515e20",
+                "DatabaseAliasName": "mydb-1",
+                "DatabaseConnectionDetails": null,
+                "RepositoryDetails": {
+                  "$type": "DOP.SourceControl.ExternalSourceControl.Git.Models.GitRepositoryDetails, DOP.SourceControl.ExternalSourceControl.Git",
+                  "RemoteRepositoryURL": "https://github.com/john-ekka/dbm-local-mssql-demo.git",
+                  "RemoteBranchName": "main",
+                  "LocalBranchName": "main"
+                }
+              }
+            ]
+          }
+        ],
         "SourceControlPathType": 0,
         "Configuration": {
           "BuildMigrationScriptAutomatically": true,
@@ -21,7 +40,30 @@
       "UserData": [
         {
           "UserName": "john.ekka@gmail.com",
-          "DatabasesData": []
+          "DatabasesData": [
+            {
+              "DatabaseId": "60ed9ca7-328e-4e65-bbe8-3d145b515e20",
+              "DatabaseAliasName": "mydb-1",
+              "DatabaseConnectionDetails": null,
+              "BranchesDatabaseConnectionDetails": [
+                {
+                  "BranchName": "main",
+                  "DatabaseConnectionDetails": {
+                    "DBTypeName": "SQL Server",
+                    "host": "DESKTOP-GCE0ACR\\SQLEXPRESS",
+                    "authType": "SqlAuthentication",
+                    "userName": "testuser1",
+                    "dbName": "demo_dev",
+                    "Password": "LI06arKSf5LYt6hPSAmwfg=="
+                  }
+                }
+              ],
+              "RepositoryCredentials": {
+                "UserName": "john.ekka@gmail.com",
+                "Password": "WglD02Ze/K2OOo/Dl+4rhvR7O+BfRk382QHh3P8QhnntcyKXbl4fXMCGQ3aUUE6r"
+              }
+            }
+          ]
         }
       ]
     }
