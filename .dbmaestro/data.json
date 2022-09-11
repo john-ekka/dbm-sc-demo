@@ -56,6 +56,17 @@
                     "dbName": "demo_dev",
                     "Password": "LI06arKSf5LYt6hPSAmwfg=="
                   }
+                },
+                {
+                  "BranchName": "feature/change1",
+                  "DatabaseConnectionDetails": {
+                    "DBTypeName": "SQL Server",
+                    "host": "DESKTOP-GCE0ACR\\SQLEXPRESS",
+                    "authType": "WindowsAuthentication",
+                    "userName": "testuser1",
+                    "dbName": "c1",
+                    "Password": "LI06arKSf5LYt6hPSAmwfg=="
+                  }
                 }
               ],
               "RepositoryCredentials": {
